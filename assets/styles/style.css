@@ -1,0 +1,73 @@
+:root {
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+    --Green: hsl(154, 59%, 51%);
+    --Red: hsl(0, 100%, 74%);
+    --White: hsl(255, 100%, 100%);
+}
+
+*, body, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Red);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Intro Section */
+
+.intro {
+    background: url(../images/bg-intro-mobile.png) fixed center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: var(--White);
+    height: 100vh;
+    padding: 1.5rem;
+}
+
+/* Presentation (Up / Left) */
+
+.intro__presentation {
+    padding: 2rem 0;
+}
+
+.intro__presentation--title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.intro__presentation--subtitle {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Sign Up (Down / Right) */
+
+.intro__signup--trial {
+    background-color: var(--Blue);
+    border-radius: 0.6rem;
+    height: 5rem;
+}
+
+.intro__signup--message {
+    padding: 0 3rem;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.intro__signup--message span {
+    font-weight: 700;
+}
+
