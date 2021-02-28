@@ -13,13 +13,11 @@ function eventListeners() {
 
 function validateForm(e) {
     if(e.target.value.trimStart().length > 0) {
-        
         e.target.classList.remove('border-red');
-        
+
         if(e.target.nextElementSibling.classList.value === 'error-message') {
             e.target.nextElementSibling.remove();
         }
-
     } else {
         e.target.classList.add('border-red');
         const message = notification(`${e.target.placeholder} cannot be empty`, 'error');
@@ -29,29 +27,20 @@ function validateForm(e) {
         }
     }
 
-    console.log(e.target.type)
+    /*
+        ↑ Input.length > 0            Error message was removed
+        ↓ Input.type === email        We need to create and insert a new error message
+    */
 
     if(e.target.type === 'email') {
         if(regexEmail.test(e.target.value) === false) {
+
             if(e.target.nextElementSibling.classList.value != 'error-message') {
-                console.log('entra')
                 const message = notification('Looks like this is not an email', 'error');
                 form.insertBefore(message, e.target.nextElementSibling);
+                e.target.classList.add('border-red');
             }
         }
-        // if(regexEmail.test(e.target.value)) {
-        //     if(e.target.nextElementSibling.classList.value === 'error-message') {
-        //         e.target.nextElementSibling.remove();
-        //     }
-        // } else {
-        //     const message = 'Looks like this is not an email';
-        //     if(e.target.nextElementSibling.classList.value === 'error-message') {
-        //         e.target.nextElementSibling.value = `${message}`;
-        //     } else {
-        //         const message = notification(`${message}`, 'error');
-        //         form.insertBefore(message, e.target.nextElementSibling);
-        //     }
-        // }
     }
 }
 
