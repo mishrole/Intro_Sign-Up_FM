@@ -15,8 +15,13 @@
 }
 
 body {
-    background-color: var(--Red);
+    background: url(../images/bg-intro-mobile.png) fixed top center repeat var(--Red);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     font-weight: 400;
+    min-height: 100%;
 }
 
 body, input {
@@ -26,14 +31,10 @@ body, input {
 /* Intro Section */
 
 .intro {
-    background: url(../images/bg-intro-mobile.png) fixed top center repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    position: relative;
     color: var(--White);
-    height: 100vh;
     margin: 1.5rem;
+    height: 100vh;
 }
 
 /* Presentation (Up / Left) */
@@ -60,6 +61,10 @@ body, input {
 }
 
 /* Sign Up (Down / Right) */
+
+.intro__signup {
+    padding: 1.5rem 0;
+}
 
 .intro__signup--trial {
     background-color: var(--Blue);
@@ -177,9 +182,12 @@ body, input {
 /* Tablet M */
 
 @media only screen and (min-width: 768px) {
+    body {
+        background: url(../images/bg-intro-desktop.png) fixed center center repeat var(--Red);
+    }
+
     .intro {
         align-items: center;
-        background: url(../images/bg-intro-desktop.png) fixed center center repeat;
         display: flex;
         justify-content: center;
         padding: 0 2rem;
