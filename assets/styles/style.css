@@ -15,13 +15,16 @@
 
 body {
     background-color: var(--Red);
+}
+
+body, input {
     font-family: 'Poppins', sans-serif;
 }
 
 /* Intro Section */
 
 .intro {
-    background: url(../images/bg-intro-mobile.png) fixed center center;
+    background: url(../images/bg-intro-mobile.png) fixed top center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
