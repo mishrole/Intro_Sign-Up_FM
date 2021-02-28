@@ -168,6 +168,10 @@ body, input {
         padding: 1rem 2rem;
     }
 
+    .intro__signup--trial {
+        height: 4rem;
+    }
+
 }
 
 /* Tablet M */
@@ -195,6 +199,10 @@ body, input {
     .intro__presentation--title,
     .intro__presentation--subtitle {
         text-align: left;
+    }
+
+    .intro__signup--trial {
+        height: 5rem;
     }
 }
 
