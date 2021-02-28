@@ -114,7 +114,6 @@ body, input {
     background-color: var(--Green);
     border: 0px transparent;
     border-radius: 0.4rem;
-    /* box-shadow: → ↑ ratio size color*/
     box-shadow: 0px 2px 1px 1px rgba(58, 163, 118, 0.9);
     -moz-box-shadow: 0px 2px 1px 1px rgba(58, 163, 118, 0.9);
     -webkit-box-shadow: 0px 2px 1px 1px rgba(58, 163, 118, 0.9);
@@ -165,14 +164,11 @@ body, input {
 }
 
 /* Tablet M */
+
 @media only screen and (min-width: 768px) {
     .intro {
         align-items: center;
         background: url(../images/bg-intro-desktop.png) fixed center center repeat;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
         display: flex;
         justify-content: center;
         padding: 0 2rem;
@@ -196,6 +192,7 @@ body, input {
 }
 
 /* Desktop */
+
 @media only screen and (min-width: 992px) {
     .intro {
         padding: 0 4rem;
@@ -227,6 +224,7 @@ body, input {
 }
 
 /* Desktop XL */
+
 @media only screen and (min-width: 1024px) {
     .intro__presentation {
         padding: 0 3rem 0 2rem;
