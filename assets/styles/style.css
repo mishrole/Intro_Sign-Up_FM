@@ -144,6 +144,7 @@ body, input {
     box-shadow: 0px 2px 1px 1px rgba(53, 167, 117, 0.8);
     -moz-box-shadow: 0px 2px 1px 1px rgba(53, 167, 117, 0.8);
     -webkit-box-shadow: 0px 2px 1px 1px rgba(53, 167, 117, 0.8);
+    outline: none;
 }
 
 .intro__signup--terms {
