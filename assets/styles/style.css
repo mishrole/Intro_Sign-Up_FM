@@ -100,17 +100,14 @@ body, input {
 }
 
 .intro__signup--input:focus {
+    border: 1px solid var(--Blue);
     outline-color: var(--White);
     outline-style: solid;
     outline-width: thin;
-    border: 1px solid var(--Blue);
-    /* padding-left: 2rem; */
-    /* color: -internal-light-dark(black, white); */
 }
 
 .intro__signup--input::placeholder {
     font-weight: 600;
-
 }
 
 .intro__signup--cta {
@@ -196,11 +193,6 @@ body, input {
     .intro__presentation--subtitle {
         text-align: left;
     }
-
-    /* .intro__signup--input::placeholder {
-        font-weight: 600;
-        padding-left: 0.6rem;
-    } */
 }
 
 /* Desktop */
@@ -270,10 +262,6 @@ body, input {
     .intro__presentation--title {
         font-size: 2.9rem;
     }
-
-    /* .intro__presentation--subtitle {
-        font-size: 1rem;
-    } */
 }
 
 @media only screen and (min-width: 1668px) {
