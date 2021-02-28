@@ -11,6 +11,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: margin .4s linear, padding .4s linear, width .4s linear, height .4s linear, font-size .8s linear;
 }
 
 body {
@@ -42,7 +43,7 @@ body, input {
 }
 
 .intro__presentation--title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     padding: 2rem;
     text-align: center;
@@ -95,7 +96,7 @@ body, input {
     border: 1px solid rgb(226, 226, 226);
     border-radius: 0.4rem;
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 1rem 1.2rem;
 }
 
 .intro__signup--input:focus {
@@ -103,12 +104,13 @@ body, input {
     outline-style: solid;
     outline-width: thin;
     border: 1px solid var(--Blue);
+    /* padding-left: 2rem; */
     /* color: -internal-light-dark(black, white); */
 }
 
 .intro__signup--input::placeholder {
     font-weight: 600;
-    margin-left: 15rem;
+
 }
 
 .intro__signup--cta {
@@ -127,6 +129,14 @@ body, input {
     text-transform: uppercase;
 }
 
+.intro__signup--cta:hover {
+    cursor: pointer;
+    background-color: rgba(56, 204, 140, 0.8);
+    box-shadow: 0px 2px 1px 1px rgba(53, 167, 117, 0.8);
+    -moz-box-shadow: 0px 2px 1px 1px rgba(53, 167, 117, 0.8);
+    -webkit-box-shadow: 0px 2px 1px 1px rgba(53, 167, 117, 0.8);
+}
+
 .intro__signup--terms {
     color: var(--GrayishBlue);
     font-size: 0.7rem;
@@ -134,9 +144,14 @@ body, input {
     text-align: center;
 }
 
-.intro__signup--terms span {
+.intro__signup--terms a {
     color: var(--Red);
     font-weight: 700;
+    text-decoration: none;
+}
+
+.intro__signup--terms a:hover {
+    color: rgb(255, 122, 122, 0.9);
 }
 
 /* Tablet S*/
@@ -144,6 +159,10 @@ body, input {
     .intro {
         margin: 0 auto;
         width: 85%;
+    }
+
+    .intro__signup--input {
+        padding: 1rem 2rem;
     }
 
 }
@@ -178,10 +197,10 @@ body, input {
         text-align: left;
     }
 
-    .intro__signup--input::placeholder {
+    /* .intro__signup--input::placeholder {
         font-weight: 600;
-        padding: 0 0.6rem;
-    }
+        padding-left: 0.6rem;
+    } */
 }
 
 /* Desktop */
@@ -239,15 +258,27 @@ body, input {
     .intro__signup--terms {
         padding: 0 2rem;
     }
+    
 }
 
 @media only screen and (min-width: 1264px) {
     .intro__presentation {
-        /* padding: 0 3rem 0 2rem; */
+        padding: 0 4rem 0 2rem;
         width: 50%;
     }
 
     .intro__presentation--title {
         font-size: 2.9rem;
+    }
+
+    /* .intro__presentation--subtitle {
+        font-size: 1rem;
+    } */
+}
+
+@media only screen and (min-width: 1668px) {
+    .intro__presentation--title {
+        font-size: 3rem;
+        padding-right: 1rem;
     }
 }
