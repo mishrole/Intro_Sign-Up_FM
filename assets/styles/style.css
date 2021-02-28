@@ -136,7 +136,9 @@ body, input {
     text-transform: uppercase;
 }
 
-.intro__signup--cta:hover {
+.intro__signup--cta:hover,
+.intro__signup--cta:active,
+.intro__signup--cta:focus {
     cursor: pointer;
     background-color: rgba(56, 204, 140, 0.8);
     box-shadow: 0px 2px 1px 1px rgba(53, 167, 117, 0.8);
