@@ -63,7 +63,7 @@ body, input {
 /* Sign Up (Down / Right) */
 
 .intro__signup {
-    padding: 1.5rem 0;
+    padding-bottom: 3rem;
 }
 
 .intro__signup--trial {
