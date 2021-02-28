@@ -54,6 +54,11 @@ body, input {
     text-align: center;
 }
 
+.intro__presentation--title,
+.intro__presentation--subtitle {
+    cursor: context-menu;
+}
+
 /* Sign Up (Down / Right) */
 
 .intro__signup--trial {
@@ -64,6 +69,7 @@ body, input {
     -webkit-box-shadow: 0px 6px 2px 0px rgba(0, 0, 0, 0.12);
     height: 5rem;
     margin: 1.3rem 0;
+    cursor: context-menu;
 }
 
 .intro__signup--message {
@@ -138,6 +144,7 @@ body, input {
     font-size: 0.7rem;
     padding: 0 1.3rem;
     text-align: center;
+    cursor: context-menu;
 }
 
 .intro__signup--terms a {
