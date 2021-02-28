@@ -28,6 +28,27 @@ body, input {
     font-family: 'Poppins', sans-serif;
 }
 
+.btn-disabled {
+    cursor: not-allowed;
+    opacity: 50%;
+}
+
+.border-red {
+    border: 1px solid var(--Red) !important;
+}
+
+.border-red::placeholder {
+    color: var(--Red) !important;
+}
+
+.error-message {
+    color: var(--Red);
+    font-size: 0.7rem;
+    text-align: right;
+    padding-bottom: 1rem;
+    font-style: italic;
+}
+
 /* Intro Section */
 
 .intro {
