@@ -15,6 +15,7 @@
 
 body {
     background-color: var(--Red);
+    font-weight: 400;
 }
 
 body, input {
@@ -24,7 +25,7 @@ body, input {
 /* Intro Section */
 
 .intro {
-    background: url(../images/bg-intro-mobile.png) fixed top center;
+    background: url(../images/bg-intro-mobile.png) fixed top center repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -56,14 +57,15 @@ body, input {
 .intro__signup--trial {
     background-color: var(--Blue);
     border-radius: 0.6rem;
-    height: 5rem;
     box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 0.12);
     -moz-box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 0.12);
     -webkit-box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 0.12);
+    height: 5rem;
     margin: 1.3rem 0;
 }
 
 .intro__signup--message {
+    font-weight: 200;
     padding: 0 3rem;
     position: relative;
     text-align: center;
