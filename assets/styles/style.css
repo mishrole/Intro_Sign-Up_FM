@@ -31,6 +31,7 @@ body, input {
     -moz-background-size: cover;
     -o-background-size: cover;
     color: var(--White);
+    height: 100vh;
     padding: 1.5rem;
 }
 
@@ -57,9 +58,9 @@ body, input {
 .intro__signup--trial {
     background-color: var(--Blue);
     border-radius: 0.6rem;
-    box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 0.12);
-    -moz-box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 0.12);
-    -webkit-box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 6px 2px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 6px 2px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0px 6px 2px 0px rgba(0, 0, 0, 0.12);
     height: 5rem;
     margin: 1.3rem 0;
 }
@@ -92,28 +93,38 @@ body, input {
 
 .intro__signup--input {
     border: 1px solid rgb(226, 226, 226);
+    border-radius: 0.4rem;
     margin-bottom: 1rem;
     padding: 1rem;
 }
 
+.intro__signup--input:focus {
+    outline-color: var(--White);
+    outline-style: solid;
+    outline-width: thin;
+    border: 1px solid var(--Blue);
+    /* color: -internal-light-dark(black, white); */
+}
+
 .intro__signup--input::placeholder {
-    font-weight: 700;
+    font-weight: 600;
+    margin-left: 15rem;
 }
 
 .intro__signup--cta {
     background-color: var(--Green);
     border: 0px transparent;
     border-radius: 0.4rem;
+    /* box-shadow: → ↑ ratio size color*/
+    box-shadow: 0px 2px 1px 1px rgba(58, 163, 118, 0.9);
+    -moz-box-shadow: 0px 2px 1px 1px rgba(58, 163, 118, 0.9);
+    -webkit-box-shadow: 0px 2px 1px 1px rgba(58, 163, 118, 0.9);
     color: var(--White);
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 1rem;
     padding: 1.2rem;
     text-transform: uppercase;
-    /* box-shadow: horizontal vertical difuminado tamaño */
-    box-shadow: 0px 2px 1px 1px rgba(58, 163, 118, 0.9);
-    -moz-box-shadow: 0px 2px 1px 1px rgba(58, 163, 118, 0.9);
-    -webkit-box-shadow: 0px 2px 1px 1px rgba(58, 163, 118, 0.9);
 }
 
 .intro__signup--terms {
@@ -126,4 +137,117 @@ body, input {
 .intro__signup--terms span {
     color: var(--Red);
     font-weight: 700;
+}
+
+/* Tablet S*/
+@media only screen and (min-width: 600px) {
+    .intro {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+}
+
+/* Tablet M */
+@media only screen and (min-width: 768px) {
+    .intro {
+        align-items: center;
+        background: url(../images/bg-intro-desktop.png) fixed center center repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        display: flex;
+        justify-content: center;
+        padding: 0 2rem;
+        width: 90%;
+    }
+
+    .intro__presentation {
+        padding: 0 2rem 0 1rem;
+        width: 70%;
+    }
+
+    .intro__presentation--title {
+        padding: 0 2rem 2rem 0;
+        font-size: 1.8rem;
+    }
+
+    .intro__presentation--title,
+    .intro__presentation--subtitle {
+        text-align: left;
+    }
+
+    .intro__signup--input::placeholder {
+        font-weight: 600;
+        padding: 0 0.6rem;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+    .intro {
+        padding: 0 4rem;
+        width: 100%;
+    }
+
+    .intro__presentation {
+        padding: 0 3rem 0 2rem;
+        width: 60%;
+    }
+
+    .intro__presentation--title {
+        font-size: 2.2rem;
+        padding: 0 2rem 1.5rem 0;
+    }
+
+    .intro__signup--trial {
+        height: 3.6rem;
+    }
+
+    .intro__signup--form {
+        padding: 2rem;
+    }
+
+    .intro__signup--terms {
+        padding: 0 2.5rem;
+    }
+
+}
+
+/* Desktop XL */
+@media only screen and (min-width: 1024px) {
+    .intro__presentation {
+        padding: 0 3rem 0 2rem;
+        width: 60%;
+    }
+
+    .intro__presentation--title {
+        padding: 0 0 1.6rem 0;
+    }
+
+    .intro__signup--terms {
+        padding: 0 4rem;
+    }
+}
+
+@media only screen and (min-width: 1127px) {
+    .intro {
+        padding: 0 8rem;
+    }
+
+    .intro__signup--terms {
+        padding: 0 2rem;
+    }
+}
+
+@media only screen and (min-width: 1264px) {
+    .intro__presentation {
+        /* padding: 0 3rem 0 2rem; */
+        width: 50%;
+    }
+
+    .intro__presentation--title {
+        font-size: 2.9rem;
+    }
 }
