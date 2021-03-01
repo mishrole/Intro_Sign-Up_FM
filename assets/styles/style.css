@@ -41,6 +41,23 @@ body, input {
     color: var(--Red) !important;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    position: absolute;
+}
+
+.success-message {
+    color: black;
+    border-radius: 0.5rem;
+    text-align: left;
+    background: var(--White);
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
 .error-message {
     color: var(--Red);
     font-size: 0.7rem;
@@ -201,6 +218,10 @@ body, input {
         height: 4rem;
     }
 
+    .flex-container {
+        margin-top: 1.5rem;
+    }
+
 }
 
 /* Tablet M */
@@ -266,6 +287,10 @@ body, input {
 
     .intro__signup--terms {
         padding: 0 2.5rem;
+    }
+
+    .flex-container {
+        width: 60% !important;
     }
 
 }
