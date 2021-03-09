@@ -35,6 +35,11 @@ body, input {
 
 .border-red {
     border: 1px solid var(--Red) !important;
+    background-image: url(../images/icon-error.svg) !important;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 30px 30px !important;
+    background-position: 98% 50%;
 }
 
 .border-red::placeholder {
